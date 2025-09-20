@@ -81,7 +81,9 @@ body {
 }
 
 #work {
+    padding: 5% 5%;
     background-color: rgb(255, 240, 200);
+
 }
 
 #contact {
