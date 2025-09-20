@@ -9,11 +9,46 @@ body {
     font-optical-sizing: auto;
     font-weight: 48px;
     font-style: normal;
+    color:rgb(32, 32, 32)
 }
 
 #nav {
+    position: sticky;
+    top: 0;
+    background-color: rgb(255, 255, 255);
+    display: flex;
     text-align: left;
+    align-items: center;
+    padding: 0 15px;
+    padding-right: 40px;
+    display: flex;
 }
+
+#nav img {
+    width: 70px;
+    margin: 0;
+    padding: 0;
+}
+
+#nav-buttons {
+    display: block;
+    margin-left: auto;
+}
+
+#nav-buttons a {
+    margin-left: 30px;
+    color:rgb(32, 32, 32);
+    text-decoration: none;
+    height: fit-content;
+}
+
+#nav-buttons a:hover {
+    text-decoration: underline;
+} 
+
+#nav-buttons a:focus {
+    background-color: underline;
+} 
 
 #about-me {
     padding: 5% 5%;
@@ -51,7 +86,7 @@ body {
 
 #contact {
     padding: 5% 5%;
-    background-color: rgb(224, 252, 216);
+    background-color: #e0fcd8;
 }
 
 #contact-buttons {
