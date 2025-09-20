@@ -50,5 +50,16 @@ body {
 }
 
 #contact {
+    padding: 5% 5%;
     background-color: rgb(224, 252, 216);
+}
+
+#contact-buttons {
+    display: flex;
+    margin-top: 10px;
+}
+
+#contact-buttons img{
+    width: 40px;
+    margin-right: 10px;
 }
