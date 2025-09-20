@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 48px;
+    font-style: normal;
+}
+
+#nav {
+    text-align: left;
+}
+
+#about-me {
+    padding: 5% 5%;
+    background-color: rgb(255, 215, 229);
+}
+
+#about-me-title {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+#about-me-title h1{
+    font-size: 50px;
+}
+
+#about-me-title img {
+    width: 30%;
+    border-radius: 100%;
+    display: block;
+    margin-left: auto;
+}
+
+#about-me-desc {
+    margin-top: 4%;
+    padding: 2% 2%;
+    background-color: rgb(252, 252, 252);
+    border: 10px solid rgb(241, 195, 245);
+    border-radius: 20px;
+}
+
+#work {
+    background-color: rgb(255, 240, 200);
+}
+
+#contact {
+    background-color: rgb(224, 252, 216);
+}
