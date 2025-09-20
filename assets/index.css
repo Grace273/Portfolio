@@ -22,6 +22,7 @@ body {
     padding: 0 15px;
     padding-right: 40px;
     display: flex;
+    z-index: 1000;
 }
 
 #nav img {
@@ -83,8 +84,90 @@ body {
 #work {
     padding: 5% 5%;
     background-color: rgb(255, 240, 200);
-
+    position: relative;
+    margin: auto;
 }
+
+#slideshow-container {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    border: 5px solid rgb(186, 225, 255);
+    border-radius: 20px;
+    width: 80%;
+}
+
+.projects {
+    /* hide projects by default */
+    display: none;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+#work h2 {
+    margin-bottom: 20px;
+}
+
+.work-images{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width: 50%;
+}
+
+.work-text {
+    margin-bottom: 8%;
+}
+
+.work-desc li{
+    list-style-position: inside;
+}
+
+#prev, #next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: rgb(32, 32, 32);
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 2px;
+    user-select: none;
+}
+
+#next {
+    right: 10px;
+}
+
+#prev {
+    left: 10px;
+}
+
+#prev:hover, #next:hover {
+  background-color: rgb(186, 225, 255);
+}
+
+/* .fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+} */
 
 #contact {
     padding: 5% 5%;
