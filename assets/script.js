@@ -1,15 +1,16 @@
-let slideIndex = 1;
+let slideIndex = 0;
 
 const prevButton = document.getElementById("prev");
 const nextButton = document.getElementById("next");
 
+showSlides(slideIndex);
 
 prevButton.addEventListener("click", function() {
-    showSlides(slideIndex -= 1);
+    showSlides(-1);
 })
 
 nextButton.addEventListener("click", function() {
-    showSlides(slideIndex += 1);
+    showSlides(1);
 })
 
 function showSlides(n) {
@@ -18,19 +19,17 @@ function showSlides(n) {
     
     slideIndex += n
 
-    if (n > slides.length) {
-        slideIndex = 1
+    if (slideIndex >= slides.length) {
+        slideIndex = 0
     }
 
-    if (n < 1) {
-        slideIndex = slides.length
+    if (slideIndex < 0) {
+        slideIndex = slides.length - 1
     }
 
     for(i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
     }
 
-    // -1 since array index starts at 0
-    slides[slideIndex-1].style.display = "block";
-    slides[slideIndex-1].style.width= "80%";
+    slides[slideIndex].style.display = "block";
 }

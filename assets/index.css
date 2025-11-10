@@ -52,7 +52,7 @@ body {
 } 
 
 #about-me {
-    padding: 5% 5%;
+    padding: 10% 5%;
     background-color: rgb(255, 215, 229);
 }
 
@@ -63,14 +63,50 @@ body {
 }
 
 #about-me-title h1{
-    font-size: 50px;
+    font-size: 90px;
+
+    @media (width <= 60em) {
+        font-size: 8vw;
+    }
+}
+
+#about-me-title p, #about-me-desc, .work-desc{
+    font-size: 2rem;
+
+    @media (width <= 60em) {
+        font-size: 3vw;
+    }
+}
+
+#about-me-desc {
+    font-size: 24px;
+    width: 80%;
+
+    @media (width <= 60em) {
+        font-size: 15px;
+        width: 100%;
+    }
+}
+
+#about-me-desc p{
+    font-size: 24px;
+
+    @media (width <= 60em) {
+        font-size: 15px;
+    }
 }
 
 #about-me-title img {
     width: 30%;
     border-radius: 100%;
+    margin-left: 10%;
     display: block;
     margin-left: auto;
+    border: 8px solid rgb(241, 195, 245);
+
+    @media (width <= 60em) {
+        width: 40%;
+    }
 }
 
 #about-me-desc {
@@ -81,14 +117,32 @@ body {
     border-radius: 20px;
 }
 
+h2 {
+    padding-top: 5% ;
+    font-size: 2rem;
+}
+
 #work {
     padding: 5% 5%;
-    background-color: rgb(255, 240, 200);
     position: relative;
+    background-color: rgb(255, 240, 200);
     margin: auto;
 }
 
+.work-content-container {
+    padding: 5% 5%;
+}
+
+.slide-counter, .work-desc p {
+    color: grey;
+    display: block;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 #slideshow-container {
+    position: relative;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -115,21 +169,41 @@ body {
 
 
 #work h2 {
+    position: relative;
     margin-bottom: 20px;
 }
 
 .work-images{
-    margin-top: 5%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
     margin-bottom: 5%;
-    width: 50%;
+    width: 70%;
+    box-shadow: 0px 0px 20px #c3c3c3;
+    
+    @media (width <= 60em) {
+        width: 100%;
+    }
+}
+
+.work-images:hover {
+    box-shadow: 0px 0px 20px #f4a77a;
 }
 
 .work-text {
     margin-bottom: 8%;
 }
 
+.work-desc {
+    padding: 2% 5%;
+    background-color: #fdeadf;
+    border-radius: 2%;
+}
+
 .work-desc li{
     list-style-position: inside;
+    padding-bottom: 2%;
 }
 
 #prev, #next {
@@ -140,26 +214,35 @@ body {
     margin-top: -22px;
     padding: 16px;
     color: rgb(32, 32, 32);
-    font-weight: bold;
-    font-size: 18px;
+    font-size: 40px;
     transition: 0.6s ease;
     border-radius: 2px;
     user-select: none;
 }
 
 #next {
+    padding-right: 6%;
     right: 10px;
 }
 
 #prev {
+    padding-left: 6%;
     left: 10px;
 }
 
 #prev:hover, #next:hover {
-  background-color: rgb(186, 225, 255);
+    background-color: rgb(186, 225, 255);
 }
 
-/* .fade {
+#next:hover {
+    padding-left: 6%;
+}
+
+#prev:hover {
+    padding-right: 6%;
+}
+
+.fade {
   animation-name: fade;
   animation-duration: 1.5s;
 }
@@ -167,7 +250,7 @@ body {
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
-} */
+}
 
 #contact {
     padding: 5% 5%;
