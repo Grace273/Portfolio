@@ -199,6 +199,11 @@ h2 {
     padding: 2% 5%;
     background-color: #fdeadf;
     border-radius: 2%;
+    font-size: 1.3rem;
+}
+
+.work-desc p {
+    padding-bottom: 10px;
 }
 
 .work-desc li{
@@ -252,8 +257,21 @@ h2 {
   to {opacity: 1}
 }
 
+#github-link, #github-link:visited, #github-link:active {
+    text-decoration: none;
+    text-decoration: underline;
+    color: black;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+#github-link:hover {
+    color: hotpink;
+}
+
 #contact {
     padding: 2% 5%;
+    font-size: 1.3rem;
     background-color: #e0fcd8;
 }
 
